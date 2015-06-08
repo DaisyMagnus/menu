@@ -16,7 +16,16 @@
 
 #populate courses
 #make a page where you can enter a new dish.
+#validiations  - name and price and price is a number
+#populate dishes database,  just like courses. rake db:reset
+#link to make a new dish based on
+
 
 Course.create!(name: "Appetizer")
+Course.create!(name: "Salad")
 Course.create!(name: "Entree")
 Course.create!(name: "Dessert")
+
+Dish.create!(price:15.00, name:"Greek Salad", course_id:2, description: "A salad with feta, olives,
+and tomatoes.")
+Dish.create!(price:25.00, name:"Salmon", course_id:3, description: "A salmon on a bed of lettuce.")

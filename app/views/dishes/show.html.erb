@@ -17,7 +17,7 @@
 
 <p>
   <strong>Course:</strong>
-  <%= @dish.course %>
+  <%= @dish.course(:name) %>
 </p>
 
 <%= link_to 'Edit', edit_dish_path(@dish) %> |
