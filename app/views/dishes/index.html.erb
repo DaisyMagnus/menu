@@ -19,7 +19,7 @@
         <td><%= dish.price %></td>
         <td><%= link_to dish.name, edit_dish_path(dish.id)%></td>
         <td><%= dish.description %></td>
-        <td><%= dish.course(:name) %></td>
+        <td><%= dish.course_id %></td>
         <td><%= link_to 'Show', dish %></td>
         <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>

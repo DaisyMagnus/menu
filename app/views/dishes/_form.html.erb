@@ -24,7 +24,7 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :course_id %>
+    <%= f.hidden_field :course_id, :value => params[:course_id] %>
   </div>
   <div class="actions">
     <%= f.submit %>
